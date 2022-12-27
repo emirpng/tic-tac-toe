@@ -12,3 +12,4 @@ psutil
 speedtest-cli
 motor
 pyTelegramBotAPI
+keyboa
