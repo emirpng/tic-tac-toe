@@ -109,7 +109,7 @@ def begin_mp(message):
     bot.send_message(chat_id=message.chat.id, text="Waiting for players...", reply_markup=keyboard())
 
 
-@bot.message_handler(commands=['start'], chat_types=['group'])
+@bot.message_handler(commands=['start'], chat_types=['private'])
 def begin_sp(message):
     bot.send_message(message.chat.id, "Tic-tac-toe: Single player")
     gm = logic.Game()
